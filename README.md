@@ -16,9 +16,9 @@ After building Ring using these scripts you have two choices to run it.
 
 	./rnote.sh
 
-(2) You can run it as global command line program(Previous method of running Ring). You have to copy ring binary, library and its related extensions libraries to (/usr/bin) and (/usr/lib) using this script
+(2) You can run it as global command line program(Previous method of running Ring). You have to copy ring binary, library and its related extensions libraries to (/usr/bin) and (/usr/lib) using this script 
 
-	../bin/install.sh
+	sudo ./bin/install.sh
 
 
 

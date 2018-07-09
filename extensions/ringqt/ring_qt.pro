@@ -136,6 +136,7 @@ unix:!macx {
 
 CONFIG += warn_off
 CONFIG += release
+CONFIG += plugin
 
 
 QMAKE_LFLAGS_WINDOWS = /SUBSYSTEM:WINDOWS,5.01
