@@ -4,9 +4,7 @@ To make ring be able to use its extensions from the same directory it is located
 
 The building steps are the same steps that have been explained in Ring Language Github page or Ring documentation. BUT you just need to merge these scripts to the ring directory tree as soon as you get ring source code.
 
-**Note1:** You can build Ring binary with its Compiler/VM library as a single executable using (buildgcc1exe.sh) script in the (src) folder.
-
-**Note2:** Its very important to grant these scripts execution permissions before building process
+**Note:** Its very important to grant these scripts execution permissions before building process
 
 # Running Ring after building
 
