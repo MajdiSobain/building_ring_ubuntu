@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += sql core gui network webkitwidgets multimedia multimediawidgets testlib printsupport widgets serialport bluetooth opengl positioning
+QT       += sql core gui network multimedia multimediawidgets testlib printsupport widgets serialport bluetooth opengl positioning webenginewidgets texttospeech 3dcore 3dextras 3drender 3dlogic
 
 TARGET = ringqt
 TEMPLATE = lib
@@ -26,7 +26,7 @@ SOURCES +=   \
     cpp/src/gspinbox.cpp \
     cpp/src/gslider.cpp \
     cpp/src/gdial.cpp \
-    cpp/src/gwebview.cpp \
+    cpp/src/gwebengineview.cpp \
     cpp/src/gcheckbox.cpp \
     cpp/src/gradiobutton.cpp \
     cpp/src/gbuttongroup.cpp \
@@ -65,6 +65,9 @@ SOURCES +=   \
     cpp/src/gprintpreviewwidget.cpp \
     cpp/src/gprintpreviewdialog.cpp \
     cpp/src/gprintdialog.cpp \
+    cpp/src/gtexttospeech.cpp \
+    cpp/src/gobjectpicker.cpp \
+    cpp/src/gframeaction.cpp \
     cpp/src/ring_qt.cpp
 
 HEADERS  += \
@@ -82,7 +85,7 @@ HEADERS  += \
     cpp/include/gspinbox.h \
     cpp/include/gslider.h \
     cpp/include/gdial.h \
-    cpp/include/gwebview.h \
+    cpp/include/gwebengineview.h \
     cpp/include/gcheckbox.h \
     cpp/include/gradiobutton.h \
     cpp/include/gbuttongroup.h \
@@ -120,7 +123,11 @@ HEADERS  += \
     cpp/include/ggeopositioninfosource.h \
     cpp/include/gprintpreviewwidget.h \
     cpp/include/gprintpreviewdialog.h \
-    cpp/include/gprintdialog.h
+    cpp/include/gprintdialog.h \
+    cpp/include/gtexttospeech.h \
+    cpp/include/gobjectpicker.h \
+    cpp/include/gframeaction.h
+
     
 
 INCLUDEPATH += ../../include
@@ -136,8 +143,8 @@ win32 {
 macx {
 	LIBS +=  ../../lib/libring.dylib
 	QT   += quick quickwidgets qml
-	SOURCES += cpp/src/openglwidget.cpp cpp/src/gquickwidget.cpp 
-	HEADERS += cpp/include/openglwidget.h cpp/include/gquickwidget.h 
+	SOURCES += cpp/src/gquickwidget.cpp 
+	HEADERS += cpp/include/gquickwidget.h 
 }
 
 unix:!macx {
